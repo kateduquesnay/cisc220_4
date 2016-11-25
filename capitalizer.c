@@ -5,9 +5,8 @@
 //Dean Wilkins-Reeves 10176758
 
 //Question 3: Capitalizer
-
-
-
+	
+	
 #include <stdio.h>
 
 int main(int argc, char *argv[]){
@@ -21,14 +20,14 @@ while((ch = fscanf(fp, "%s", argv[1])!=EOF)){
     currentword = fscanf(fp, "%s", argv[counter]);
 	if (ch >= 'a' && ch<= 'z' && counter%2!=0){
 		//capitalize first letter
-		toupper(currentword[0]);
+		int toupper(int currentword[0]);
 		//write to file
-		fprintf(FILE *fp, currentword);
+		fprintf(FILE *fp, "%s", currentword);
 		counter ++;
 	}//end if
 	//is a number, does not need to be capitalized, written to new file as is
 	else{
-		fprintf(FILE *fp, currentword);
+		fprintf(FILE *fp, "%s", currentword);
 		counter++;
 	}//end else
 	//reach end of file
