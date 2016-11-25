@@ -8,19 +8,17 @@
 
 
 
-
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]){
 FILE *fp = fopen(argv[1], "w+");
 int counter = 1;
 int ch;
 char currentword[100]; //character array ---> string for each word in .txt file
-done = 0;
 
 	//word by word with spaces as delimiters
-while((ch = fscanf(fp)!=EOF){
-    currentword = fscanf(fp, "%s", currentword);
+while((ch = fscanf(fp, "%s", argv[1])!=EOF)){
+    currentword = fscanf(fp, "%s", argv[counter]);
 	if (ch >= 'a' && ch<= 'z' && counter%2!=0){
 		//capitalize first letter
 		toupper(currentword[0]);
@@ -40,4 +38,3 @@ while((ch = fscanf(fp)!=EOF){
 	 
 	return 0;
 }//end main
-
