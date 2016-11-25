@@ -9,16 +9,25 @@
 
 #include <stdio.h>
 
-int main(void) {
-  
-  textpoem = fopen("poem.txt", "w+");
-  if(textpoem == NULL){
-    printf("file not found");
-  }//end if
+int main( int argc, char *argv[]) {
+ 
+FILE *fp  fopen(filename, "w+");
+int counter = 1;
+int ch;
+char currentword[100]; //character array ---> string for each word in .txt file
+done = 0;
 
-
-    
-  
+while((ch = getc(fp)!=EOF)P{
+	if (ch >= 'a' && ch<= 'z' && counter%2!=0){
+		//capitalize
+		//write to file
+		counter ++;
+	}//end if
+	else{
+		//write the original word to file
+	}//end else
+}//end while
+	 
 	return 0;
 }//end main
-                   //isalpha() --> check to see if arg is in the alphabet
+ 
