@@ -10,7 +10,7 @@
 #include <stdio.h>
 
 int main( int argc, char *argv[]) {
- 
+char filename[];
 FILE *fp  fopen(filename, "w+");
 int counter = 1;
 int ch;
