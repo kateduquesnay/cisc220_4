@@ -11,15 +11,15 @@
 
 #include <stdio.h>
 
-int main( int argc, char *argv[]) {
-FILE *fp  fopen(argv[1], "w+");
+int main(int argc, char *argv[]) {
+FILE *fp = fopen(argv[1], "w+");
 int counter = 1;
 int ch;
 char currentword[100]; //character array ---> string for each word in .txt file
 done = 0;
 
 	//word by word with spaces as delimiters
-while((ch = fscanf(fp)!=EOF)P{
+while((ch = fscanf(fp)!=EOF){
     currentword = fscanf(fp, "%s", currentword);
 	if (ch >= 'a' && ch<= 'z' && counter%2!=0){
 		//capitalize first letter
@@ -31,9 +31,10 @@ while((ch = fscanf(fp)!=EOF)P{
 	//is a number, does not need to be capitalized, written to new file as is
 	else{
 		fprintf(FILE *fp, currentword);
+		counter++;
 	}//end else
 	//reach end of file
-	break;
+
 }//end while
       fclose(fp);
 	 
