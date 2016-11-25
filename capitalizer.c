@@ -19,12 +19,12 @@ done = 0;
 
 while((ch = getc(fp)!=EOF)P{
 	if (ch >= 'a' && ch<= 'z' && counter%2!=0){
-		//capitalize
-		//write to file
+		toupper(currentword[0]);
+		fprintf(FILE *fp, currentword);
 		counter ++;
 	}//end if
 	else{
-		//write the original word to file
+		fprintf(FILE *fp, currentword);
 	}//end else
 }//end while
 	 
